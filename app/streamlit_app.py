@@ -220,7 +220,7 @@ def display_model_explanations(metrics=None):
         if os.path.exists(shap_importance_path):
             try:
                 img = plt.imread(shap_importance_path)
-                st.image(img, use_column_width=True)
+                st.image(img, use_container_width=True)
                 
                 st.info("""
                 This plot shows which features have the greatest impact on the model's predictions:
@@ -235,7 +235,7 @@ def display_model_explanations(metrics=None):
             xgb_importance_path = os.path.join(PROJECT_ROOT, "output", "feature_importance.png")
             if os.path.exists(xgb_importance_path):
                 img = plt.imread(xgb_importance_path)
-                st.image(img, use_column_width=True)
+                st.image(img, use_container_width=True)
             else:    
                 st.error('Feature importance plot not found.')
                 
@@ -248,7 +248,7 @@ def display_model_explanations(metrics=None):
         feature_impact_path = os.path.join(PROJECT_ROOT, "output", "shap_feature_impact.png")
         if os.path.exists(feature_impact_path):
             img = plt.imread(feature_impact_path)
-            st.image(img, use_column_width=True)
+            st.image(img, use_container_width=True)
             
             st.info("""
             **How to interpret this visualization:**
@@ -268,7 +268,7 @@ def display_model_explanations(metrics=None):
         global_impact_path = os.path.join(PROJECT_ROOT, "output", "shap_global_explanation.png")
         if os.path.exists(global_impact_path):
             img = plt.imread(global_impact_path)
-            st.image(img, use_column_width=True)
+            st.image(img, use_container_width=True)
             
             st.info("""
             **Key insights:**
@@ -288,7 +288,7 @@ def display_model_explanations(metrics=None):
         dependence_path = os.path.join(PROJECT_ROOT, "output", "shap_dependence_plots.png")
         if os.path.exists(dependence_path):
             img = plt.imread(dependence_path)
-            st.image(img, use_column_width=True)
+            st.image(img, use_container_width=True)
             
             st.info("""
             **Understanding these plots:**
@@ -309,7 +309,7 @@ def display_model_explanations(metrics=None):
         waterfall_path = os.path.join(PROJECT_ROOT, "output", "shap_waterfall_plots.png")
         if os.path.exists(waterfall_path):
             img = plt.imread(waterfall_path)
-            st.image(img, use_column_width=True)
+            st.image(img, use_container_width=True)
             
             st.info("""
             **How to read these waterfall plots:**
