@@ -1,0 +1,26 @@
+{
+  "accuracy": 0.8219894262776581,
+  "precision": 0.31416137379440134,
+  "recall": 0.4503456415444276,
+  "f1_score": 0.37012402133998473,
+  "f2_score": 0.41441693042884625,
+  "roc_auc": 0.7582651805420653,
+  "confusion_matrix": [
+    [
+      39308,
+      5831
+    ],
+    [
+      3260,
+      2671
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n           0       0.92      0.87      0.90     45139\n           1       0.31      0.45      0.37      5931\n\n    accuracy                           0.82     51070\n   macro avg       0.62      0.66      0.63     51070\nweighted avg       0.85      0.82      0.84     51070\n",
+  "threshold": 0.3,
+  "tp": 2671,
+  "fp": 5831,
+  "tn": 39308,
+  "fn": 3260,
+  "optimal_threshold": 0.2573409974575043,
+  "shap_available": true
+}
